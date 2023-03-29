@@ -1,10 +1,4 @@
 import ModuleSidebar from "./ModuleSidebar";
-import { Route, Routes, Link, useLocation } from "react-router-dom";
-import ModuleAssignment from "./ModuleAssignment";
-import ModuleQuiz from "./ModuleQuiz";
-import ModuleTopic from "./ModuleTopic";
-import calendar from "../assets/calendar.svg";
-import clock from "../assets/clock.svg";
 import information from "../assets/information.svg";
 import topic from "../assets/topic.svg";
 import videocam from "../assets/videocam.svg";

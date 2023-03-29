@@ -1,7 +1,6 @@
 import analysis from "../assets/analysis.png";
 import wrangling from "../assets/wrangling.png";
 import UserAvatar from "../assets/userAvatar.png";
-import chat from "../assets/chat.svg";
 
 const HomePage = () => {
   return (

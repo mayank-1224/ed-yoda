@@ -1,7 +1,4 @@
 import ModuleSidebar from "./ModuleSidebar";
-import { Route, Routes, Link, useLocation } from "react-router-dom";
-import ModuleQuiz from "./ModuleQuiz";
-import ModuleTopic from "./ModuleTopic";
 import calendar from "../assets/calendar.svg";
 import clock from "../assets/clock.svg";
 

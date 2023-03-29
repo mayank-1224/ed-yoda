@@ -4,7 +4,7 @@ import instructor from "../assets/instructor.svg";
 import homeBlue from "../assets/homeBlue.svg";
 import moduleBlue from "../assets/moduleBlue.svg";
 import instructorBlue from "../assets/instructorBlue.svg";
-import { Route, Routes, Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const SideBar = () => {
   let location = useLocation();

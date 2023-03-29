@@ -4,7 +4,7 @@ import topic from "../assets/topic.svg";
 import activeAssignment from "../assets/activeAssignment.svg";
 import activeModuleQuiz from "../assets/activeModuleQuiz.svg";
 import activeTopic from "../assets/activeTopic.svg";
-import { Route, Routes, Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const ModuleSidebar = () => {
   let location = useLocation();

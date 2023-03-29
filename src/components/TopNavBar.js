@@ -1,4 +1,3 @@
-import { useState } from "react";
 import userAvatar from "../assets/userAvatar.png";
 
 const TopNavBar = ({ user }) => {
@@ -20,14 +19,6 @@ const TopNavBar = ({ user }) => {
             "radial-gradient(circle farthest-corner at top left, #0093FF 0%, #004aff 100%)",
           "-webkit-background-clip": "text",
           "-webkit-text-fill-color": "transparent",
-
-          /*
-          background: #0093FF;
-background: radial-gradient(circle farthest-corner at top left, #0093FF 0%, #004aff 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-
-          */
         }}
       >
         EDYODA
