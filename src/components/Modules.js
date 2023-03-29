@@ -100,6 +100,7 @@ const Modules = () => {
                 width: "15rem",
                 justifyContent: "center",
                 cursor: "pointer",
+                padding: "0.5rem 0",
               }}
             >
               <img alt="" src={information} width="20px" height="20px" />

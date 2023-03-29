@@ -55,7 +55,8 @@ const HomePage = () => {
                 color: "grey",
                 letterSpacing: "1px",
                 margin: "0",
-                borderRadius: "5px",
+                borderRadius: "0.5rem",
+                padding: "0.2rem 0.5rem",
               }}
             >
               CERTIFICATION &nbsp;|&nbsp; ATTEMPT 1
@@ -81,7 +82,8 @@ const HomePage = () => {
                 fontWeight: "500",
                 letterSpacing: "1px",
                 margin: "0",
-                borderRadius: "10px",
+                borderRadius: "2rem",
+                padding: "0.2rem 0.5rem",
               }}
             >
               COMPLETED &nbsp;|&nbsp; 21 MAR 2022
