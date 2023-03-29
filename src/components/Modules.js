@@ -15,7 +15,7 @@ const Modules = () => {
       <div
         style={{
           backgroundColor: "#f2f6ff",
-          width: "80vw",
+          width: "79vw",
           padding: "4rem 0 0 8rem",
         }}
       >
