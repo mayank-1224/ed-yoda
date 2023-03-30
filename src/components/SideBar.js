@@ -11,7 +11,7 @@ const SideBar = () => {
   return (
     <div
       style={{
-        height: "85vh",
+        height: "55rem",
         width: "8rem",
         backgroundColor: "#15294b",
         display: "flex",

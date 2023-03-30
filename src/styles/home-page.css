@@ -1,0 +1,56 @@
+.home-page-container {
+  background-color: #f2f6ff;
+  width: 100%;
+  padding: 3rem 3rem 3rem 7rem;
+}
+
+.home-page-heading {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.home-page-card__certification {
+  background-color: #fff;
+  height: 10rem;
+  display: flex;
+  width: 70rem;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #abe1ff;
+  border-radius: 10px;
+}
+
+.more-info__text {
+  font-size: 0.8rem;
+  background-color: #f5f5f5;
+  font-weight: 500;
+  color: grey;
+  letter-spacing: 1px;
+  margin: 0;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.home-page-card__heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.more-info__exam-structure {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.more-info__exam-structure__tags {
+  margin: 0 0.5rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  background-color: #dfe6f2;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+}

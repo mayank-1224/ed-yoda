@@ -12,7 +12,7 @@ const ModuleSidebar = () => {
     <div
       style={{
         backgroundColor: "#e0e6f2",
-        height: "85vh",
+        height: "55rem",
         width: "12rem",
         display: "flex",
         flexDirection: "column",

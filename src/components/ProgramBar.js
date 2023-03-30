@@ -1,3 +1,4 @@
+import "../styles/nav-bars.css";
 import { useEffect, useState } from "react";
 import dropUp from "../assets/dropUp.svg";
 import dropDown from "../assets/dropDown.svg";
@@ -10,51 +11,16 @@ const ProgramBar = ({ programs }) => {
   }, [programs]);
 
   return (
-    <div
-      style={{
-        width: "100%",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "1rem 5rem",
-          backgroundColor: "#15294b",
-          height: "3rem",
-        }}
-      >
-        <h3
-          style={{
-            color: "#fff",
-            fontSize: "1.5rem",
-            margin: "0",
-            fontWeight: "400",
-            display: "flex",
-          }}
-        >
+    <div className="full-width">
+      <div className="program-bar-container">
+        <h3 className="program-bar-container__program-name">
           {activeProgram?.id}
           {open ? (
-            <button
-              onClick={() => setOpen(false)}
-              style={{
-                border: "none",
-                backgroundColor: "transparent",
-                cursor: "pointer",
-              }}
-            >
+            <button className="drop-button" onClick={() => setOpen(false)}>
               <img src={dropUp} width="40px" height="40px" alt="" />
             </button>
           ) : (
-            <button
-              onClick={() => setOpen(true)}
-              style={{
-                border: "none",
-                backgroundColor: "transparent",
-                cursor: "pointer",
-              }}
-            >
+            <button className="drop-button" onClick={() => setOpen(true)}>
               <img src={dropDown} width="40px" height="40px" alt="" />
             </button>
           )}
@@ -63,29 +29,8 @@ const ProgramBar = ({ programs }) => {
         </h3>
       </div>
       {open && (
-        <div
-          style={{
-            position: "absolute",
-            right: "0",
-            left: "0",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            padding: "0rem 5rem 1rem 5rem",
-            backgroundColor: "#15294b",
-            zIndex: "999",
-          }}
-        >
-          <h3
-            style={{
-              color: "#fff",
-              fontSize: "0.9rem",
-              margin: "0",
-              fontWeight: "400",
-            }}
-          >
-            Select Program
-          </h3>
+        <div className="program-bar">
+          <h3 className="program-bar__select-program">Select Program</h3>
           <div
             style={{
               display: "flex",
@@ -94,27 +39,18 @@ const ProgramBar = ({ programs }) => {
           >
             {programs.map((program) => (
               <button
+                className="program-button"
                 onClick={() => {
                   setActiveProgram(program);
                   setOpen(false);
                 }}
-                style={{
-                  border: "none",
-                  backgroundColor: "transparent",
-                  cursor: "pointer",
-                  margin: "0.9rem 0.6rem",
-                }}
               >
                 <h3
+                  className="program-name"
                   style={{
-                    fontSize: "1.1rem",
-                    margin: "0",
-                    fontWeight: "400",
                     backgroundColor:
                       activeProgram.id === program.id ? "#fff" : "transparent",
                     color: activeProgram.id === program.id ? "#15294b" : "#fff",
-                    borderRadius: "0.2rem",
-                    padding: "0.1rem 0.5rem",
                   }}
                 >
                   {program.id}

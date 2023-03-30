@@ -1,154 +1,45 @@
+import "../styles/home-page.css";
 import analysis from "../assets/analysis.png";
 import wrangling from "../assets/wrangling.png";
 import UserAvatar from "../assets/userAvatar.png";
 
 const HomePage = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "#f2f6ff",
-        width: "100%",
-        padding: "3rem 3rem 3rem 7rem",
-        // height: "100%",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <h2
-          style={{
-            color: "#000",
-            fontSize: "2rem",
-            fontWeight: "500",
-            margin: "1rem 0",
-          }}
-        >
-          Upcoming Certifications
-        </h2>
-
-        <div
-          style={{
-            backgroundColor: "#fff",
-            width: "60%",
-            height: "10rem",
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "center",
-            boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.1)",
-            border: "1px solid #abe1ff",
-            borderRadius: "10px",
-          }}
-        >
+    <div className="home-page-container">
+      <div>
+        <h2 className="home-page-heading">Upcoming Certifications</h2>
+        <div className="home-page-card__certification">
           <div style={{ marginLeft: "3rem" }}>
             <img src={analysis} alt="analysis" />
           </div>
           <div style={{ margin: "0 3rem" }}>
-            <h4
-              style={{
-                fontSize: "0.8rem",
-                backgroundColor: "#f5f5f5",
-                textAlign: "center",
-                fontWeight: "500",
-                color: "grey",
-                letterSpacing: "1px",
-                margin: "0",
-                borderRadius: "0.5rem",
-                padding: "0.2rem 0.5rem",
-              }}
-            >
+            <h4 className="more-info__text">
               CERTIFICATION &nbsp;|&nbsp; ATTEMPT 1
             </h4>
-            <h3
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: "400",
-                letterSpacing: "1px",
-                margin: "0",
-              }}
-            >
+            <h3 className="home-page-card__heading">
               DATA ANALYSIS
               <br />
               CERTIFICATION
             </h3>
             <h4
+              className="more-info__text"
               style={{
-                fontSize: "0.8rem",
                 backgroundColor: "#cceeff",
-                textAlign: "center",
-                color: "grey",
-                fontWeight: "500",
-                letterSpacing: "1px",
-                margin: "0",
-                borderRadius: "2rem",
-                padding: "0.2rem 0.5rem",
               }}
             >
               COMPLETED &nbsp;|&nbsp; 21 MAR 2022
             </h4>
           </div>
           <div style={{ margin: "0 3rem" }}>
-            <h4
-              style={{
-                fontSize: "1rem",
-                fontWeight: "400",
-              }}
-            >
-              Exam Structure
-            </h4>
-            <h4
-              style={{
-                fontSize: "1rem",
-                fontWeight: "300",
-              }}
-            >
+            <h4 className="more-info__exam-structure">Exam Structure</h4>
+            <h4 className="more-info__exam-structure">
               Round 1
-              <span
-                style={{
-                  margin: "0 0.5rem",
-                  fontWeight: "500",
-                  fontSize: "0.8rem",
-                  backgroundColor: "#dfe6f2",
-                  padding: "0.2rem 0.5rem",
-                  borderRadius: "1rem",
-                }}
-              >
-                MCQS
-              </span>
-              <span
-                style={{
-                  margin: "0 0.5rem",
-                  fontWeight: "500",
-                  fontSize: "0.8rem",
-                  backgroundColor: "#dfe6f2",
-                  padding: "0.2rem 0.5rem",
-                  borderRadius: "1rem",
-                }}
-              >
-                CODING
-              </span>
+              <span className="more-info__exam-structure__tags">MCQS</span>
+              <span className="more-info__exam-structure__tags">CODING</span>
             </h4>
-            <h4
-              style={{
-                fontSize: "1rem",
-                fontWeight: "300",
-              }}
-            >
+            <h4 className="more-info__exam-structure">
               Round 2
-              <span
-                style={{
-                  margin: "0 0.5rem",
-                  fontWeight: "500",
-                  fontSize: "0.8rem",
-                  backgroundColor: "#dfe6f2",
-                  padding: "0.2rem 0.5rem",
-                  borderRadius: "1rem",
-                }}
-              >
-                PROJECT
-              </span>
+              <span className="more-info__exam-structure__tags">PROJECT</span>
             </h4>
           </div>
           <div style={{ margin: "0 3rem" }}>
@@ -177,6 +68,7 @@ const HomePage = () => {
         }}
       >
         <h2
+          className="home-page-heading"
           style={{
             color: "#000",
             fontSize: "2rem",
@@ -190,7 +82,7 @@ const HomePage = () => {
           style={{
             display: "flex",
             flexDirection: "row-reverse",
-            width: "46.5%",
+            width: "48em",
           }}
         >
           <a

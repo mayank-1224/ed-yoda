@@ -1,0 +1,86 @@
+.top-nav-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 5rem;
+}
+
+.top-nav-bar-title {
+  color: #007eff;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.top-nav-bar-user-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-nav-bar-user-container__user-name {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 400;
+  margin-right: 1rem;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.program-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: #15294b;
+  height: 3rem;
+}
+
+.program-bar-container__program-name {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 400;
+  display: flex;
+}
+
+.drop-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.program-bar {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0rem 5rem 1rem 5rem;
+  background-color: #15294b;
+  z-index: 999;
+}
+
+.program-bar__select-program {
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.program-name {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 400;
+  border-radius: 0.2rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.program-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0.9rem 0.6rem;
+}
